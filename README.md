@@ -150,6 +150,6 @@ const routes = [
     name: 'NouvellePage',
     component: () => import('../pages/NouvellePage.vue')
   },
-  // Autres routes...
+  
 ]
 ```
