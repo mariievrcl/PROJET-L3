@@ -23,7 +23,7 @@
     </section>
 
     <!-- 
-    Comment lettre les bonnes données dans les sections suivantes ?
+    Comment mettre les bonnes données dans les sections suivantes ?
 
     Artistes en Tendance
     -->
