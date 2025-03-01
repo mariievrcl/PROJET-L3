@@ -1,0 +1,47 @@
+{
+    "trendingArtists": [
+      {
+        "id": "1",
+        "name": "Artiste Tendance 1",
+        "image": "/songs/artist1.jpg",
+        "spotify_url": "https://open.spotify.com/artist/1"
+      },
+      {
+        "id": "2",
+        "name": "Artiste Tendance 2",
+        "image": "/songs/artist2.jpg",
+        "spotify_url": "https://open.spotify.com/artist/2"
+      }
+    ],
+    "undergroundArtists": [
+      {
+        "id": "3",
+        "name": "Artiste Peu Connu 1",
+        "image": "/songs/underground1.jpg",
+        "spotify_url": "https://open.spotify.com/artist/3"
+      },
+      {
+        "id": "4",
+        "name": "Artiste Peu Connu 2",
+        "image": "/songs/underground2.jpg",
+        "spotify_url": "https://open.spotify.com/artist/4"
+      }
+    ],
+    "popularAlbums": [
+      {
+        "id": "5",
+        "name": "Album Populaire 1",
+        "artist": "Artiste 1",
+        "image": "/songs/album1.jpg",
+        "spotify_url": "https://open.spotify.com/album/5"
+      },
+      {
+        "id": "6",
+        "name": "Album Populaire 2",
+        "artist": "Artiste 2",
+        "image": "/songs/album2.jpg",
+        "spotify_url": "https://open.spotify.com/album/6"
+      }
+    ]
+  }
+  
