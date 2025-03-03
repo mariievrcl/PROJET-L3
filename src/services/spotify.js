@@ -45,14 +45,35 @@ async function getArtists() {
 
 // Fonction pour obtenir des recommandations d'albums
 async function getRecommandations() {
-  const token = await getAccessToken(); // Obtention du token d'accès
-  const response = await fetch("https://api.spotify.com/v1/recommendations", {
-    headers: { Authorization: `Bearer ${token}` }, // Ajout du token dans les en-têtes de la requête
-  });
 
-  const data = await response.json(); // Conversion de la réponse en JSON
+  try{
+  
+  const token = await getAccessToken(); // Obtention du token d'accès
+  
+  const response = await fetch("hhttps://api.spotify.com/v1/playlists/37i9dQZEVXbMDoHDwVN2tF",
+  {
+  
+  headers: { Authorization: `Bearer ${token}`
+  }, // Ajout du token dans les en-têtes de la requête
+  
+  });
+  
+  const data = await response.json(); // Conversion de la
+  // réponse en JSON
+  
   return data.albums.items; // Retourne la liste des albums recommandés
-}
+  
+  }
+  
+  catch(e) {
+  
+  console.log(`Erreur lors de la récupération des recommandations: ${e}`)
+  
+  return []
+  
+  }
+  
+  }
 
 // Fonction pour obtenir les playlists populaires
 async function getPlaylists() {

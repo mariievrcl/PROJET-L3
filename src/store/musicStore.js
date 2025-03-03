@@ -1,6 +1,6 @@
 // store/musicStore.js
 import { defineStore } from 'pinia';
-import { getAccessToken } from '../../services/spotify'; // Ajoutez cette ligne
+import { getAccessToken } from '../../src/services/spotify'; // Ajoutez cette ligne
 
 export const useMusicStore = defineStore('music', {
   state: () => ({

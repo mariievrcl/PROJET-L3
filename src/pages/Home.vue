@@ -31,9 +31,11 @@
   <h2>🔥 Artistes en tendance</h2>
   <div v-if="trendingArtists.length" class="scroll-container">
     <div v-for="artist in trendingArtists" :key="artist.id" class="card">
-      <img :src="artist.images[0]?.url" :alt="artist.name" class="cover rounded"/>
-      <p class="title"><strong>{{ artist.name }}</strong></p>
-      <a :href="artist.external_urls.spotify" target="_blank" class="spotify-link">Découvrir</a>
+      <img v-if="artist.images && artist.images.length"
+:src="artist.images[0]?.url" :alt="artist.name"
+class="cover rounded"/>
+      <p class="title"><strong>{{ artist.name}}</strong></p>
+      <a v-if="artist.external_urls?.spotify" :href="artist.external_urls.spotify" target="_blank" class="spotify-link">Découvrir</a>
     </div>
   </div>
   <p v-else>Chargement...</p>
@@ -156,7 +158,7 @@ const goToAlbum = (album) => {
 
 <script>
 // Importation des services Spotify pour récupérer les données musicales
-import { getNewReleases, getArtists, getRecommandations, getPlaylists } from "../../services/spotify";
+import { getNewReleases, getArtists, getRecommandations, getPlaylists } from "../../src/services/spotify";
 
 export default {
   // Définition des données réactives du composant

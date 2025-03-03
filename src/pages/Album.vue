@@ -48,7 +48,7 @@
 import { ref, computed, onMounted } from "vue";
 import { useMusicStore } from "../store/musicStore";
 import { useRoute, useRouter } from "vue-router";
-import { getAccessToken } from "../../services/spotify";
+import { getAccessToken } from "../../src/services/spotify";
 
 const musicStore = useMusicStore();
 const route = useRoute();
