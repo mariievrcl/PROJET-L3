@@ -50,7 +50,7 @@ async function getRecommandations() {
   
   const token = await getAccessToken(); // Obtention du token d'accès
   
-  const response = await fetch("hhttps://api.spotify.com/v1/playlists/37i9dQZEVXbMDoHDwVN2tF",
+  const response = await fetch("https://api.spotify.com/v1/playlists/37i9dQZEVXbMDoHDwVN2tF",
   {
   
   headers: { Authorization: `Bearer ${token}`
